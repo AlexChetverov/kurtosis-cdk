@@ -109,6 +109,8 @@ async function callPrecompile(type: { address: string; name: string }, data: str
 callPrecompile(precompileType, inputData);
 ```
 
+We can check that "0x47617465776179" is Gateway by using any UTF-8 encoder (e.g. https://mothereff.in/utf-8) 
+
 ### Run It
 
 ```bash
@@ -120,6 +122,8 @@ npx hardhat run scripts/callRawPrecompile.ts
 ```
 SHA256 result for 0x47617465776179 is: 0x41ed52921661c7f0d68d92511589cc9d7aaeab2b5db49fb27f0be336cbfdb7df
 ```
+
+We can check Gateway is 0x41ed52921661c7f0d68d92511589cc9d7aaeab2b5db49fb27f0be336cbfdb7df by using any SHA-256 encrypter (e.g. https://10015.io/tools/sha256-encrypt-decrypt)
 
 ---
 
@@ -217,7 +221,7 @@ e.g.
 curl -X POST http://127.0.0.1:54906 -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["0x6c72118a1d379215224c9c50b93ac98ef1249d646c7747e116e843d9b57c6cb7"],"id":1}'
 ```
 
-✅ Look for `"status":"0x1"`.
+✅ Look for `"status":"0x1"`. It indicates the transaction was successful and finalized on-chain
 
 #### 2. Verify Contract Bytecode Exists
 
@@ -232,7 +236,7 @@ e.g.
 ```
 
 
-✅ Should return non-empty `"result": "0x..."`.
+✅ Should return non-empty `"result": "0x..."`. A non-empty "result" means the contract was successfully deployed, and EVM bytecode is stored at the address.
 
 ---
 
