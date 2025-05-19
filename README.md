@@ -282,7 +282,7 @@ main().catch((err) => {
 npx hardhat run scripts/contractInvocation.ts
 ```
 
-Expected Output:
+✅ Expected Output:
 
 ```
 SHA256 of 'Gateway' via precompile: 0x41ed52921661c7f0d68d92511589cc9d7aaeab2b5db49fb27f0be336cbfdb7df
