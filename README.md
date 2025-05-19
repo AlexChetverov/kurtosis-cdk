@@ -109,7 +109,7 @@ async function callPrecompile(type: { address: string; name: string }, data: str
 callPrecompile(precompileType, inputData);
 ```
 
-We can check that "0x47617465776179" is Gateway by using any UTF-8 encoder (e.g. https://mothereff.in/utf-8) 
+We can check that "0x47617465776179" is "Gateway" in UTF-8 by using any UTF-8 encoder (e.g. https://mothereff.in/utf-8) 
 
 ### Run It
 
@@ -123,7 +123,7 @@ npx hardhat run scripts/callRawPrecompile.ts
 SHA256 result for 0x47617465776179 is: 0x41ed52921661c7f0d68d92511589cc9d7aaeab2b5db49fb27f0be336cbfdb7df
 ```
 
-We can check Gateway is 0x41ed52921661c7f0d68d92511589cc9d7aaeab2b5db49fb27f0be336cbfdb7df by using any SHA-256 encrypter (e.g. https://10015.io/tools/sha256-encrypt-decrypt)
+We can check that "Gateway" is "0x41ed52921661c7f0d68d92511589cc9d7aaeab2b5db49fb27f0be336cbfdb7df" in SHA256 by using any SHA256 encrypter (e.g. https://10015.io/tools/sha256-encrypt-decrypt)
 
 ---
 
