@@ -123,7 +123,7 @@ SHA256 result for 0x47617465776179 is: 0x41ed52921661c7f0d68d92511589cc9d7aaeab2
 
 ---
 
-## 🏗 Stage 2 – Contract Wrapper Deployment
+## Stage 2 – Contract Wrapper Deployment
 
 ### Solidity Contract
 
@@ -236,7 +236,7 @@ e.g.
 
 ---
 
-## ⚙️ Stage 3 – Contract Invocation
+## Stage 3 – Contract Invocation
 
 ### TypeScript Script
 

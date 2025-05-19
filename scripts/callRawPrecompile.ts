@@ -2,6 +2,7 @@ import { ethers } from "hardhat";
 
 const provider = new ethers.JsonRpcProvider("http://localhost:54906");
 
+//Set initial conditions
 const precompileType = {
   address: "0x0000000000000000000000000000000000000002",
   name: "SHA256"
