@@ -1,0 +1,29 @@
+[
+  {
+    "stage": "1",
+    "description": "Raw Precompile Call",
+    "txHash": null,
+    "receiver": "0x0000000000000000000000000000000000000002",
+    "input": "0x47617465776179",
+    "decodedOutput": "0x41ed52921661c7f0d68d92511589cc9d7aaeab2b5db49fb27f0be336cbfdb7df",
+    "verdict": "pass"
+  },
+  {
+    "stage": "2",
+    "description": "Contract Wrapper Deployment",
+    "txHash": "0x89a2aa0b4597097161faa499ba8aa1cd2d3ac752198a417707165f2682969444",
+    "receiver": "0x62bf798EdaE1B7FDe524276864757cc424A5c3dD",
+    "decodedOutput": null,
+    "verdict": "pass"
+  },
+  {
+    "stage": "3",
+    "description": "Contract Invocation",
+    "txHash": null,
+    "receiver": "0x62bf798EdaE1B7FDe524276864757cc424A5c3dD",
+    "input": "sha256ViaPrecompile(\"Gateway\")",
+    "decodedOutput": "0x41ed52921661c7f0d68d92511589cc9d7aaeab2b5db49fb27f0be336cbfdb7df",
+    "expectedOutput": "0x41ed52921661c7f0d68d92511589cc9d7aaeab2b5db49fb27f0be336cbfdb7df",
+    "verdict": "pass"
+  }
+]

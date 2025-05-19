@@ -29,3 +29,20 @@ templates/contract-deploy/dynamic-kurtosis-allocs.json
 templates/contract-deploy/dynamic-kurtosis-conf.json
 templates/contract-deploy/genesis.json
 anvil_state.json
+node_modules
+.env
+
+# Hardhat files
+/cache
+/artifacts
+
+# TypeChain files
+/typechain
+/typechain-types
+
+# solidity-coverage files
+/coverage
+/coverage.json
+
+# Hardhat Ignition default folder for deployments against a local node
+ignition/deployments/chain-31337
