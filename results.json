@@ -1,7 +1,7 @@
 [
   {
     "stage": "1",
-    "description": "Raw Precompile Call",
+    "description": "Raw Precompilation",
     "txHash": null,
     "receiver": "0x0000000000000000000000000000000000000002",
     "input": "0x47617465776179",
